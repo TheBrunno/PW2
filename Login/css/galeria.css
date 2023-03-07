@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 57, 85);
+}
+
+.container img{
+    height: 500px;
+    margin: 30px;
+}
