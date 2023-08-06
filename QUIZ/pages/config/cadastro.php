@@ -10,7 +10,7 @@
 
 
     if(empty($user)){
-        $user = "guest";
+        $user = "Guest".rand();
     }
 
     $stmt = $pdo->prepare("INSERT INTO tbUser VALUES(null, '$user', '$score')");
