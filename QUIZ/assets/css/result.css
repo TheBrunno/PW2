@@ -1,0 +1,15 @@
+main{
+    left: calc(50vw - 30vw);
+    top: calc(50vh - 16.5vh);
+    width: 60vw;
+    height: 39vh;
+    min-width: 700px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+input[type="button"] {
+    width: 30%;
+  }
