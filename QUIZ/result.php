@@ -1,9 +1,19 @@
 <?php
   include('pages/include/header-result.php');
   session_start();
+  $resultados = ["Você definitivamente é um <span class=\"poppins\">Minecrafter</span>", "Você conhece bastante de Minecraft", "Você conhece um pouco de Minecraft", "Você é fraco, lhe falta Monark (de 2012)"];
+  if($_SESSION["score"]==10){
+    $text = $resultados[0];
+  } else if($_SESSION["score"]>6){
+    $text = $resultados[1];
+  }else if($_SESSION["score"]>3){
+    $text = $resultados[2];
+  } else{
+    $text = $resultados[3];
+  }
 ?>
     <div class="container-inf">
-        <h1>Você definitivamente é um <span class="poppins">Minecrafter</span></h1>
+        <h1> <?php echo $text ?></h1>
         <p>Você acertou <?php echo $_SESSION["score"]; ?> de 10 perguntas sobre <span class="poppins">Minecraft</span>.</p>
         <a class="button-initial" href="index.php">Recomeçar quiz</a>
     </div>
