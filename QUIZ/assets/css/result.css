@@ -1,9 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 main{
-    left: calc(50vw - 30vw);
-    top: calc(50vh - 16.5vh);
+    margin-top: 10vh;
     width: 60vw;
+    max-width: 900px;
     height: 32vh;
-    min-width: 700px;
+    max-height: 300px;
+    position: static;
+    min-width: 730px;
+    min-height: 300px;
 }
 
 h1{

@@ -1,10 +1,11 @@
 main {
     background: rgba(38, 38, 38, 0.9);
-    left: calc(50vw - 35vw);
-    top: calc(50vh - 35vh);
     width: 70vw;
     height: 80vh;
-    min-width: 900px;
+    max-width: 1000px;
+    max-height: 800px;
+    position: static;
+    margin: 0 auto;
 }
 
 .pergunta {
@@ -55,15 +56,51 @@ main {
     background-color: #22AE75;
     box-shadow: 0 0 7px 2px #22AE75;
 }
-
-@media (max-height: 900px){
+@media (max-height: 768px){
     .respostas button{
-        padding: 1% 0;
+        padding: 0.5vh 0;
+    }
+    header{
+        margin: 10px 0;
+    }
+    main{
+        padding: 0;
+        height: 85vh;
     }
 }
-@media (max-height: 800px){
+@media (max-height: 630px){
     .respostas button{
         padding: 0.5% 0;
+    }
+    .pergunta{
+        flex-direction: column;
+    }
+    .respostas{
+        width: 50vw;
+        margin: 10px auto;
+    }
+    .respostas button{
+        margin: 10px 0;
+    }
+    .pergunta img{
+        margin: 10px 0;
+    }
+}
+@media (max-width: 970px){
+    .pergunta{
+        flex-direction: column;
+    }
+    .respostas{
+        width: 50vw;
+        margin: 10px auto;
+    }
+    .respostas button{
+        margin: 10px auto;
+        width: 90%;
+        padding: 1vh 0;
+    }
+    .pergunta img{
+        margin: 10px 0;
     }
 }
 

@@ -19,7 +19,6 @@ body {
   background-position: top center;
   overflow: hidden;
   object-fit: cover;
-  
 }
 
 .geral-shadow {
@@ -69,8 +68,10 @@ main {
   position: absolute;
   top: calc(50vh - 125px);
   left: calc(50% - 225px);
-  width: 450px;
-  height: 255px;
+  max-width: 450px;
+  max-height: 255px;
+  width: 100vw;
+  height: 100vh;
   background: rgba(38, 38, 38, 0.8);
   border: 1px solid rgba(115, 115, 115, 0.5);
   backdrop-filter: blur(2.5px);
@@ -119,4 +120,11 @@ input[name="user"]::placeholder{
 }
 .nick{
   margin: 10px 0 0 0;
+}
+
+@media (max-width:450px) {
+  main{
+    position: static;
+    margin: calc(50vh - 255px) auto 0 auto;
+  }
 }
